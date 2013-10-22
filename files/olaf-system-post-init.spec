@@ -14,7 +14,8 @@ Requires: rpmrebuild,  gcc-c++.x86_64, kate, kile, emacs-nox, mc,  doxygen-doxyw
 Dummy-Paket mit dem ich mein System verwalte. Es benötigt als Pakrtquelle rpmfusion.
 
 %prep
-%setup
+
+%setup  -n %{name}-%{version}-%{release}
 
 
 %build
