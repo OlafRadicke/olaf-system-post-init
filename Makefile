@@ -1,17 +1,18 @@
 VERSION=2
 RELEASE=1
 PROGRAMMNAME=olaf-system-post-init
+BUILDNAME=$(PROGRAMMNAME)-$(VERSION)-$(RELEASE)
 
 cleanup:
-	rm -Rvf ./$(PROGRAMMNAME)-$(VERSION)-$(RELEASE)
-	rm -fv ./$(PROGRAMMNAME)-$(VERSION)-$(RELEASE).tar.gz 
+	rm -Rvf ./$(BUILDNAME)
+	rm -fv ./$(BUILDNAME).tar.gz 
 
 dist-tar: cleanup
-	mkdir ./$(PROGRAMMNAME)-$(VERSION)-$(RELEASE)
-	cp -Rv ./files/* ./$(PROGRAMMNAME)-$(VERSION)-$(RELEASE)/
-	tar -cvzf ./$(PROGRAMMNAME)-$(VERSION)-$(RELEASE).tar.gz ./$(PROGRAMMNAME)-$(VERSION)-$(RELEASE)/
+	mkdir ./$(BUILDNAME)
+	cp -Rv ./files/* ./$(BUILDNAME)/
+	tar -cvzf ./$(BUILDNAME).tar.gz ./$(BUILDNAME)/
 
 dist-rpm: dist-tar
 	rm -Rvf ~/rpmbuild/*
 	mkdir -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
-	rpmbuild -vv -ta ./$(PROGRAMMNAME)-$(VERSION)-$(RELEASE).tar.gz
+	rpmbuild -vv -ta ./$(BUILDNAME).tar.gz
