@@ -23,14 +23,16 @@ Dummy-Paket mit dem ich mein System verwalte. Es benötigt als Pakrtquelle rpmfu
 %install
 echo "Hallo Welt"
 
-
 %post
 
 
 %clean
-rm -fr $RPM_BUILD_ROOT
+#rm -fr $RPM_BUILD_ROOT
 
 %postun
+
+%files
+
 
 %changelog
 * Sun Oct 20 2013 olaf - 2
