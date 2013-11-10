@@ -1,11 +1,11 @@
-VERSION=4
+VERSION=5
 RELEASE=1
 PROGRAMMNAME=olaf-system-post-init
 BUILDNAME=$(PROGRAMMNAME)-$(VERSION)-$(RELEASE)
 
 cleanup:
 	rm -Rvf ./$(BUILDNAME)
-	rm -fv ./$(BUILDNAME).tar.gz 
+	rm -fv ./$(BUILDNAME).tar.gz
 
 dist-tar: cleanup
 	mkdir ./$(BUILDNAME)
