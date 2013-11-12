@@ -1,14 +1,13 @@
 Name: olaf-system-post-init
 Summary: Eigene Konfigurationen für das System.
-Version: 5
+Version: 6
 Group: system
 License: GPL
 Release: 1
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 Source:%{name}-%{version}-%{release}.tar.gz
 BuildArch: noarch
-Requires: rpmrebuild,  gcc-c++.x86_64, kate, kile, emacs-nox, mc,  doxygen-doxywizard, postgresql, postgresql-server, libreoffice, libreoffice-langpack-de.x86_64, libreoffice-calc, libreoffice-draw, libreoffice-impress, libreoffice-writer, iptraf-ng, vlc, mozilla-noscript, aspell-de, hunspell-de, automake, autoconf, libtool, postgresql-devel, zlib-devel, openssl-devel, calibre, gnucash, git, gitk, gitg, tortoisehg, mercurial, pgadmin3, dia, okular, gimp, kcoloredit, ksnapshot, gftp, ktorrent, gparted, system-config-boot, system-config-firewall, system-config-firewall-tui, system-config-keyboard, system-config-language, system-config-network, system-config-services, kwrite, keepassx, kfilereplace, sigil, pandoc, pandoc-pdf, texlive-tocbibind, texlive-multirow, kdiff3
-
+Requires: automake, autoconf, aspell-de, calibre, dia, doxygen-doxywizard, emacs-nox, gcc-c++.x86_64,  gnucash, git, gitk, gitg, gimp, gftp, gparted, hunspell-de, iptraf-ng, kate, kile, kcoloredit, ksnapshot,  ktorrent, kwrite, keepassx, kfilereplace, kdiff3, libreoffice, libreoffice-langpack-de.x86_64, libreoffice-calc, libreoffice-draw, libreoffice-impress, libreoffice-writer, libtool, mc, mercurial, mozilla-noscript, openssl-devel, okular, postgresql, postgresql-server, pgadmin3, postgresql-devel, pandoc, pandoc-pdf, rpmrebuild, system-config-boot, system-config-firewall, system-config-firewall-tui, system-config-keyboard, system-config-language, system-config-network, system-config-services, splix, sigil, vlc, tortoisehg, texlive-tocbibind, texlive-multirow, zlib-devel,  
 
 
 %description
@@ -36,6 +35,8 @@ echo "Hallo Welt"
 
 
 %changelog
+* Tue Nov 12 2013 olaf - 6
+- Splix hinzugefügt für Samsung-Drucker ML-1520. 
 * Sun Nov 10 2013 olaf - 5
 - kdiff3 hinzugefügt
 * Sun Nov 10 2013 olaf - 4
