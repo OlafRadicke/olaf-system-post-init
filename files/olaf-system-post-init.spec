@@ -7,7 +7,7 @@ Release: 1
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 Source:%{name}-%{version}-%{release}.tar.gz
 BuildArch: noarch
-Requires: automake, autoconf, aspell-de, calibre, dia, doxygen-doxywizard, emacs-nox, gcc-c++.x86_64,  gnucash, git, gitk, gitg, gimp, gftp, gparted, hunspell-de, iptraf-ng, kate, kile, kcoloredit, ksnapshot,  ktorrent, kwrite, keepassx, kfilereplace, kdiff3, libreoffice, libreoffice-langpack-de.x86_64, libreoffice-calc, libreoffice-draw, libreoffice-impress, libreoffice-writer, libtool, mc, mercurial, mozilla-noscript, openssl-devel, okular, postgresql, postgresql-server, pgadmin3, postgresql-devel, pandoc, pandoc-pdf, rpmrebuild, system-config-boot, system-config-firewall, system-config-firewall-tui, system-config-keyboard, system-config-language, system-config-network, system-config-services, splix, sigil, vlc, tortoisehg, texlive-tocbibind, texlive-multirow, zlib-devel,  
+Requires: automake, autoconf, aspell-de, calibre, dia, doxygen-doxywizard, emacs-nox, gcc-c++.x86_64,  gnucash, git, gitk, gitg, gimp, gftp, gparted, hunspell-de, iptraf-ng, kate, kile, kcoloredit, ksnapshot,  ktorrent, kwrite, keepassx, kfilereplace, kdiff3, libreoffice, libreoffice-langpack-de.x86_64, libreoffice-calc, libreoffice-draw, libreoffice-impress, libreoffice-writer, libtool, mc, mercurial, mozilla-noscript, openssl-devel, okular, postgresql, postgresql-server, pgadmin3, postgresql-devel, pandoc, pandoc-pdf, rpmrebuild, system-config-boot, system-config-firewall, system-config-firewall-tui, system-config-keyboard, system-config-language, system-config-network, system-config-services, splix, sigil, vlc, tortoisehg, texlive, texlive-tocbibind, texlive-multirow, texlive-babel-german, texlive-german texlive, zlib-devel  
 
 
 %description
