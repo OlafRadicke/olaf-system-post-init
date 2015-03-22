@@ -46,6 +46,8 @@ sed -i 's/SELINUX=.*/SELINUX=disabled/' /etc/selinux/config
 /usr/share/doc/olaf-system-post-init/releasenote.md
 
 %changelog
+* Sun Mar 22 2015 Olaf Radicke <briefkasten@olaf-radicke.de> - 8
+- Noch eine Release-Note-Datei hinzugefühgt mit das RPM auch unter Sude baut.
 * Fri Dec 13 2013 - 7
 - fedora-arm-installer-helper hinzugefühgt.
 * Tue Nov 12 2013 olaf - 6
