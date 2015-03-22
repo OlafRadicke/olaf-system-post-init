@@ -21,6 +21,13 @@ Dummy-Paket mit dem ich mein System verwalte. Es benötigt als Pakrtquelle rpmfu
 %build
 
 %install
+
+if [ $1 -eq 1 ]; then
+    echo "First install"
+else
+    echo "Upgrade"
+fi
+
 echo "Hallo Welt"
 mkdir -p %{buildroot}/usr/share/doc/olaf-system-post-init/
 ls -lah
